@@ -1,0 +1,21 @@
+*, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.main-container {
+  max-width: 1920px; }
+
+.inner-container {
+  max-width: 1140px; }
+
+header .upper-header {
+  background-color: #20D3C2;
+  height: 40px; }
+  header .upper-header .inner-container {
+    padding: 0 17px;
+    display: grid;
+    grid-auto-columns: 137px 400px; }
+
+/*# sourceMappingURL=style.css.map */
