@@ -2,20 +2,246 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #0E153D;
   font-family: 'Roboto', sans-serif; }
+
+ul li {
+  list-style: none; }
 
 .main-container {
   max-width: 1920px; }
-
-.inner-container {
-  max-width: 1140px; }
-
-header .upper-header {
-  background-color: #20D3C2;
-  height: 40px; }
-  header .upper-header .inner-container {
-    padding: 0 17px;
+  .main-container .inner-container {
+    max-width: 1140px;
+    padding: 0 12px;
+    margin: 0 auto; }
+  .main-container header {
     display: grid;
-    grid-auto-columns: 137px 400px; }
+    grid-template-rows: 40px 106px 50px;
+    align-items: center; }
+    .main-container header .top-bar {
+      background-color: #20D3C2;
+      height: 40px; }
+      .main-container header .top-bar .top-bar-content {
+        display: grid;
+        grid-template-columns: 130px auto;
+        grid-gap: 20px; }
+        .main-container header .top-bar .top-bar-content ul li {
+          display: inline-block;
+          margin-right: 12px; }
+          .main-container header .top-bar .top-bar-content ul li:last-child {
+            margin: 0; }
+          .main-container header .top-bar .top-bar-content ul li a {
+            line-height: 40px;
+            font-size: 16px;
+            color: #ffffff;
+            text-transform: uppercase;
+            display: block;
+            text-decoration: none; }
+            .main-container header .top-bar .top-bar-content ul li a:hover {
+              color: #169387; }
+              .main-container header .top-bar .top-bar-content ul li a:hover i.fa {
+                color: #169387; }
+            .main-container header .top-bar .top-bar-content ul li a i.fa {
+              margin-left: 6px;
+              font-size: 20px;
+              color: #fff; }
+        .main-container header .top-bar .top-bar-content .header-lang {
+          border-right: 1px solid #ffffff; }
+        .main-container header .top-bar .top-bar-content .top-bar-menu {
+          justify-self: end; }
+          .main-container header .top-bar .top-bar-content .top-bar-menu ul li {
+            border-right: 1px solid #ffffff;
+            padding-right: 15px; }
+            .main-container header .top-bar .top-bar-content .top-bar-menu ul li a {
+              text-transform: none; }
+    .main-container header .search-and-logo-bar .search-and-logo-bar-content {
+      display: grid;
+      grid-template-columns: 160px 95px 546px 30px 112px 30px auto;
+      align-items: center; }
+      .main-container header .search-and-logo-bar .search-and-logo-bar-content .logo {
+        width: 160px;
+        height: 24px;
+        margin: 0; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content .logo a {
+          width: 160px;
+          height: 24px;
+          background: url(../images/logo.svg) no-repeat;
+          display: block;
+          text-indent: -9000px; }
+      .main-container header .search-and-logo-bar .search-and-logo-bar-content .search-bar {
+        width: 546px;
+        height: 46px;
+        display: grid;
+        grid-template-columns: auto 146px 46px; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content .search-bar input {
+          padding: 0 25px;
+          font-size: 14px;
+          outline: none;
+          border-radius: 45px 0 0 45px;
+          border: 1px solid #E3E3E3;
+          color: #aaaaaa;
+          letter-spacing: 0.05em; }
+          .main-container header .search-and-logo-bar .search-and-logo-bar-content .search-bar input::placeholder {
+            color: #aaaaaa; }
+          .main-container header .search-and-logo-bar .search-and-logo-bar-content .search-bar input:focus {
+            box-shadow: inset 0 0 6px #aaaaaa; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content .search-bar .search-dropdown {
+          border-top: 1px solid #E3E3E3;
+          border-right: 1px solid #E3E3E3;
+          border-bottom: 1px solid #E3E3E3;
+          display: grid;
+          grid-template-columns: 1fr 26px;
+          align-items: center;
+          text-align: center;
+          cursor: pointer;
+          font-size: 16px; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content .search-bar .search-icon {
+          background-color: #20D3C2;
+          background-image: url(../images/search-icon.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 0 45px 45px 0;
+          cursor: pointer; }
+          .main-container header .search-and-logo-bar .search-and-logo-bar-content .search-bar .search-icon:hover {
+            background-color: #169387; }
+      .main-container header .search-and-logo-bar .search-and-logo-bar-content ul li a {
+        text-decoration: none;
+        font-size: 16px; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content ul li a img {
+          vertical-align: bottom;
+          margin-right: 8px; }
+      .main-container header .search-and-logo-bar .search-and-logo-bar-content ul.cart-section li {
+        position: relative;
+        display: inline-block;
+        margin-right: 18px;
+        cursor: pointer; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content ul.cart-section li:last-child {
+          margin: 0; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content ul.cart-section li:hover span {
+          background-color: #169387; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content ul.cart-section li a img {
+          margin: 0; }
+        .main-container header .search-and-logo-bar .search-and-logo-bar-content ul.cart-section li span {
+          padding: 0px 4px;
+          position: absolute;
+          min-width: 17px;
+          min-height: 17px;
+          border-radius: 50%;
+          background: #20D3C2;
+          color: #fff;
+          font-size: 12px;
+          text-align: center;
+          display: grid;
+          align-items: center;
+          top: -10px;
+          right: -10px; }
+    .main-container header .menu-bar {
+      width: 100%;
+      border-top: 1px solid #E3E3E3; }
+      .main-container header .menu-bar .menu-bar-content {
+        display: grid;
+        grid-template-columns: 255px 30px auto 111px 156px;
+        align-items: center; }
+        .main-container header .menu-bar .menu-bar-content .category-dropdown {
+          background: #20D3C2;
+          height: 50px;
+          display: grid;
+          grid-template-columns: 18px auto;
+          padding: 0 15px;
+          grid-gap: 8px;
+          align-items: center;
+          cursor: pointer; }
+          .main-container header .menu-bar .menu-bar-content .category-dropdown:hover {
+            background-color: #169387; }
+          .main-container header .menu-bar .menu-bar-content .category-dropdown span {
+            font-size: 18px;
+            color: #fff;
+            position: relative; }
+            .main-container header .menu-bar .menu-bar-content .category-dropdown span img {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translate(0, -50%); }
+        .main-container header .menu-bar .menu-bar-content ul.main-menu li {
+          margin-right: 26px;
+          display: inline-block; }
+          .main-container header .menu-bar .menu-bar-content ul.main-menu li:last-child {
+            margin: 0; }
+          .main-container header .menu-bar .menu-bar-content ul.main-menu li a {
+            display: block;
+            text-decoration: none;
+            line-height: 50px;
+            font-size: 18px; }
+            .main-container header .menu-bar .menu-bar-content ul.main-menu li a img {
+              margin-left: 9px; }
+        .main-container header .menu-bar .menu-bar-content button.special-offer {
+          height: 37px;
+          background: #20D3C2;
+          font-size: 16px;
+          border-radius: 20px;
+          border: none;
+          font-weight: 500;
+          outline: none;
+          color: #fff;
+          cursor: pointer; }
+          .main-container header .menu-bar .menu-bar-content button.special-offer:hover {
+            background: #169387; }
+  .main-container .banner-section {
+    background: #EEEEEE;
+    margin: 0 0 120px; }
+    .main-container .banner-section .banner-section-content {
+      position: relative; }
+      .main-container .banner-section .banner-section-content .banner-text {
+        width: 390px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%); }
+        .main-container .banner-section .banner-section-content .banner-text h3, .main-container .banner-section .banner-section-content .banner-text h2 {
+          font-weight: normal;
+          font-size: 60px;
+          line-height: 80px; }
+        .main-container .banner-section .banner-section-content .banner-text h2 {
+          text-transform: uppercase;
+          color: #20D3C2;
+          font-weight: bold;
+          margin: 0 0 22px; }
+        .main-container .banner-section .banner-section-content .banner-text p {
+          font-size: 16px;
+          line-height: 28px;
+          margin: 0 0 40px; }
+        .main-container .banner-section .banner-section-content .banner-text button {
+          border: none;
+          background: #fff;
+          border-radius: 40px;
+          width: 154px;
+          height: 54px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #20D3C2;
+          outline: none; }
+          .main-container .banner-section .banner-section-content .banner-text button:hover {
+            background: #20D3C2;
+            color: #fff;
+            cursor: pointer; }
+      .main-container .banner-section .banner-section-content .banner-img {
+        text-align: right; }
+        .main-container .banner-section .banner-section-content .banner-img img {
+          vertical-align: bottom; }
+  .main-container .features-section {
+    margin: 0 0 105PX; }
+    .main-container .features-section .inner-container {
+      max-width: 1590px; }
+    .main-container .features-section .features-section-content {
+      display: grid;
+      grid-template-columns: repeat(4, 397.5px);
+      grid-template-rows: 137px;
+      grid-gap: 30px; }
+      .main-container .features-section .features-section-content .single-item {
+        border-radius: 6px;
+        background: #20D3C2;
+        opacity: 0.08; }
+      .main-container .features-section .features-section-content .single-item.full-opacity {
+        opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
