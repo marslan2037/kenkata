@@ -60,6 +60,53 @@ ul.tags-list {
     }
 }
 
+
+.slider-container {
+    position: relative;
+    span.sl-button {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 64px;
+        height: 64px;
+        border: 2px solid #E3E3E3;
+        border-radius: 50%;
+        background-image: url(../images/arrow-fill.svg);
+        background-repeat: no-repeat;
+        background-position: 45% 45%;
+        &:hover {
+            background-color: #20D3C2;
+            border: 2px solid #20D3C2;
+            cursor: pointer;
+            background-image: url(../images/arrow-white.svg);
+        }
+    }
+    span.sl-button.sl-pull-left {
+        left: -80px;
+        &:hover {
+            transform: translate(0, -50%);
+            background-position: 24px;
+            transform: translate(0, -50%) rotate(180deg);
+        }
+    }
+    span.sl-button.sl-pull-right {
+        right: -80px;
+        background-position: 19px;
+        transform: translate(0, -50%) rotate(180deg);
+        &:hover {
+            transform: translate(0, -50%);
+            background-position: 24px;
+        }
+    }
+    span.sl-button.active {
+        background-color: #20D3C2;
+    }
+    .slider {
+        overflow: hidden;
+        position: relative;
+    }
+}
+
 .main-container {
     max-width: 1920px;
     margin: 0 auto;
@@ -368,7 +415,7 @@ ul.tags-list {
     .features-section {
         margin: 0 0 105PX;
         .inner-container {
-            max-width: 1590px;
+            max-width: 1680px;
         }
         .features-section-content {
             display: grid;
@@ -529,6 +576,7 @@ ul.tags-list {
             grid-template-columns: 350px 350px 350px;
             grid-template-rows: 400px;
             grid-gap: 30px;
+            position: relative;
             .single-item {
                 overflow: hidden;
                 background: #eeeeeb;
@@ -819,13 +867,15 @@ ul.tags-list {
                 position: relative;
                 border-radius: 6px;
                 background: #CCCCCC;
-                span.bar {
+                a.bar {
                     position: absolute;
                     padding: 8px 15px;
                     min-width: 107px;
                     background: #0E153D;
                     bottom: 0;
                     left: 0;
+                    cursor: pointer;
+                    text-decoration: none;
                     border-radius: 0 6px 0 6px;
                     span.heading {
                         display: block;
