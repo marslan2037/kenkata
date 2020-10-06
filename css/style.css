@@ -107,6 +107,7 @@ ul.tags-list {
         grid-template-columns: 130px auto;
         grid-gap: 20px; }
         .main-container header .top-bar .top-bar-content ul li {
+          position: relative;
           display: inline-block;
           margin-right: 12px; }
           .main-container header .top-bar .top-bar-content ul li:last-child {
@@ -248,6 +249,8 @@ ul.tags-list {
           display: inline-block; }
           .main-container header .menu-bar .menu-bar-content ul.main-menu li:last-child {
             margin: 0; }
+          .main-container header .menu-bar .menu-bar-content ul.main-menu li:hover ul.inner-menu {
+            display: block; }
           .main-container header .menu-bar .menu-bar-content ul.main-menu li a {
             display: block;
             text-decoration: none;
@@ -255,6 +258,23 @@ ul.tags-list {
             font-size: 18px; }
             .main-container header .menu-bar .menu-bar-content ul.main-menu li a img {
               margin-left: 9px; }
+          .main-container header .menu-bar .menu-bar-content ul.main-menu li ul.inner-menu {
+            display: none;
+            position: absolute;
+            width: 200px;
+            background: #20D3C2;
+            z-index: 10; }
+            .main-container header .menu-bar .menu-bar-content ul.main-menu li ul.inner-menu li {
+              margin: 0;
+              display: block; }
+              .main-container header .menu-bar .menu-bar-content ul.main-menu li ul.inner-menu li a {
+                padding: 0 12px;
+                color: #fff;
+                display: block;
+                line-height: 42px; }
+                .main-container header .menu-bar .menu-bar-content ul.main-menu li ul.inner-menu li a:hover {
+                  color: #20D3C2;
+                  background-color: #fff; }
         .main-container header .menu-bar .menu-bar-content button.special-offer {
           height: 37px;
           background: #20D3C2;
@@ -779,6 +799,29 @@ ul.tags-list {
           .main-container .promotion-section .promotion-section-content .promotion-content button:hover {
             color: #fff;
             background: #20D3C2; }
+        .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul {
+          display: grid;
+          grid-template-columns: repeat(4, 109px);
+          grid-template-rows: 109px;
+          grid-gap: 30px;
+          margin: 0 0 30px; }
+          .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li {
+            display: grid;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50%;
+            grid-gap: 5px; }
+            .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li span.value {
+              align-self: end;
+              font-weight: bold;
+              font-size: 36px;
+              line-height: 34px;
+              color: #20D3C2; }
+            .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li span.mini-title {
+              align-self: start;
+              font-size: 16px;
+              line-height: 20px;
+              color: #0E153D; }
   .main-container .promotion-section.flash-sale-section {
     background: #0E153D; }
     .main-container .promotion-section.flash-sale-section .promotion-section-content h2 {
