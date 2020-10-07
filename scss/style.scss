@@ -1050,9 +1050,14 @@ ul.tags-list {
         margin: 0 0 105px;
         @media (min-width: 320px) and (max-width: 767px) {
             margin: 0 0 45px;
+            height: 480px;
+            padding: 0 0 25px 0;
         }
         .inner-container {
             height: 100%;
+            @media (min-width: 320px) and (max-width: 767px) {
+                padding: 0;
+            }
         }
         .promotion-section-content {
             position: relative;
@@ -1060,6 +1065,9 @@ ul.tags-list {
             height: 100%;
             display: grid;
             grid-template-columns: 255px auto;
+            @media (min-width: 320px) and (max-width: 767px) {
+                grid-template-columns: auto;
+            }
             h2 {
                 font-size: 60px;
                 line-height: 50px;
@@ -1088,6 +1096,11 @@ ul.tags-list {
                 position: relative;
                 left: 0;
                 width: 255px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    padding: 0;
+                    width: 100%;
+                }
+            
                 .abs-content {
                     width: 202px;
                     left: 50%;
@@ -1109,6 +1122,9 @@ ul.tags-list {
                 position: relative;
                 right: 0;
                 width: 455px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    width: 100%;
+                }
                 p {
                     font-size: 14px;
                     line-height: 26px;
@@ -1116,6 +1132,9 @@ ul.tags-list {
                 }
                 .abs-content {
                     right: 0;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                      text-align: center;
+                    }
                 }
                 button {
                     background: #fff;
@@ -1142,6 +1161,15 @@ ul.tags-list {
                             background-color: #fff;
                             border-radius: 50%;
                             grid-gap: 5px;
+                            position: relative;
+                            .dash-b{
+                                position: absolute;
+                                width: 115px;
+                                height: 115px;
+                                border-radius: 50%;
+                                left: -3px;
+                                border: 2px dashed #20D3C2;
+                            }
                             span.value {
                                 align-self: end;
                                 font-weight: bold;
