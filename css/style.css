@@ -20,6 +20,12 @@ button.round-button {
   cursor: pointer;
   text-transform: uppercase;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  button.round-button {
+    width: 145px;
+    height: 40px;
+  }
+}
 
 ul.tags-list {
   width: initial !important;
@@ -1099,6 +1105,11 @@ ul.tags-list li button.tag:hover {
   color: #fff;
   margin: 0 0 11px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section .promotion-section-content h2 {
+    font-size: 50px;
+  }
+}
 .main-container .promotion-section .promotion-section-content h2 span {
   font-size: 36px;
   color: inherit;
@@ -1177,12 +1188,26 @@ ul.tags-list li button.tag:hover {
   color: #fff;
   background: #20D3C2;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section .promotion-section-content .promotion-content .clock-content {
+    right: initial;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul {
   display: grid;
   grid-template-columns: repeat(4, 109px);
   grid-template-rows: 109px;
   grid-gap: 30px;
   margin: 0 0 30px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul {
+    grid-template-columns: repeat(4, 65px);
+    grid-template-rows: 65px;
+    grid-gap: 13px;
+  }
 }
 .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li {
   display: grid;
@@ -1200,6 +1225,12 @@ ul.tags-list li button.tag:hover {
   left: -3px;
   border: 2px dashed #20D3C2;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li .dash-b {
+    width: 71px;
+    height: 71px;
+  }
+}
 .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li span.value {
   align-self: end;
   font-weight: bold;
@@ -1207,14 +1238,36 @@ ul.tags-list li button.tag:hover {
   line-height: 34px;
   color: #20D3C2;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li span.value {
+    font-size: 22px;
+    line-height: 15px;
+  }
+}
 .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li span.mini-title {
   align-self: start;
   font-size: 16px;
   line-height: 20px;
   color: #0E153D;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section .promotion-section-content .promotion-content .clock-content ul li span.mini-title {
+    font-size: 13px;
+  }
+}
 .main-container .promotion-section.flash-sale-section {
   background: #0E153D;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section.flash-sale-section {
+    height: initial;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section.flash-sale-section .promotion-section-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 145px;
+  }
 }
 .main-container .promotion-section.flash-sale-section .promotion-section-content h2 {
   line-height: 60px;
@@ -1225,12 +1278,28 @@ ul.tags-list li button.tag:hover {
   font-size: 24px;
   line-height: 32px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section.flash-sale-section .promotion-section-content p {
+    font-size: 23px;
+    line-height: 15px;
+  }
+}
 .main-container .promotion-section.flash-sale-section .promotion-section-content .promotion-banner {
   height: 265px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section.flash-sale-section .promotion-section-content .promotion-banner {
+    height: initial;
+  }
+}
 .main-container .promotion-section.flash-sale-section .promotion-section-content .promotion-content {
-  width: 526px;
+  max-width: 526px;
   text-align: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .promotion-section.flash-sale-section .promotion-section-content .promotion-content {
+    margin: 0;
+  }
 }
 .main-container .partner-section .partner-section-content {
   display: grid;

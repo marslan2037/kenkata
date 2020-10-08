@@ -20,6 +20,10 @@ button.round-button {
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
+    @media (min-width: 320px) and (max-width: 767px) {
+        width: 145px;
+        height: 40px;
+    }
 }
 
 ul.tags-list {
@@ -1073,6 +1077,9 @@ ul.tags-list {
                 line-height: 50px;
                 color: #fff;
                 margin: 0 0 11px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 50px;
+                }
                 span {
                     font-size: 36px;
                     color: inherit;
@@ -1133,7 +1140,7 @@ ul.tags-list {
                 .abs-content {
                     right: 0;
                     @media (min-width: 320px) and (max-width: 767px) {
-                      text-align: center;
+                        text-align: center;
                     }
                 }
                 button {
@@ -1149,12 +1156,22 @@ ul.tags-list {
                     }
                 }
                 .clock-content {
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        right: initial;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
                     ul {
                         display: grid;
                         grid-template-columns: repeat(4, 109px);
                         grid-template-rows: 109px;
                         grid-gap: 30px;
                         margin: 0 0 30px;
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            grid-template-columns: repeat(4, 65px);
+                            grid-template-rows: 65px;
+                            grid-gap: 13px; 
+                        }
                         li {
                             display: grid;
                             align-items: center;
@@ -1169,6 +1186,10 @@ ul.tags-list {
                                 border-radius: 50%;
                                 left: -3px;
                                 border: 2px dashed #20D3C2;
+                                @media (min-width: 320px) and (max-width: 767px) {
+                                    width: 71px;
+                                    height: 71px;
+                                }
                             }
                             span.value {
                                 align-self: end;
@@ -1176,12 +1197,19 @@ ul.tags-list {
                                 font-size: 36px;
                                 line-height: 34px;
                                 color: #20D3C2;
+                                @media (min-width: 320px) and (max-width: 767px) {
+                                    font-size: 22px;
+                                    line-height: 15px;
+                                }
                             }
                             span.mini-title {
                                 align-self: start;
                                 font-size: 16px;
                                 line-height: 20px;
                                 color: #0E153D;
+                                @media (min-width: 320px) and (max-width: 767px) {
+                                    font-size: 13px;
+                                }
                             }
                         }
                     }
@@ -1192,7 +1220,14 @@ ul.tags-list {
 
     .promotion-section.flash-sale-section {
         background: #0E153D;
+        @media (min-width: 320px) and (max-width: 767px) {
+            height: initial;
+        }
         .promotion-section-content {
+            @media (min-width: 320px) and (max-width: 767px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 250px 145px;
+            }
             h2 {
                 line-height: 60px;
                 text-transform: uppercase;
@@ -1201,13 +1236,23 @@ ul.tags-list {
             p {
                 font-size: 24px;
                 line-height: 32px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 23px;
+                    line-height: 15px;
+                }
             }
             .promotion-banner {
                 height: 265px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    height: initial;
+                }
             }
             .promotion-content {
-                width: 526px;
+                max-width: 526px;
                 text-align: center;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    margin: 0;
+                }
             }
         }
     }
