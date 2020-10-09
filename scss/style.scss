@@ -131,6 +131,9 @@ ul.tags-list {
         @media (min-width: 320px) and (max-width: 767px) {
             display: none;
         }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            display: none;
+        }
         .top-bar {
             background-color:#20D3C2;
             height: 40px;
@@ -485,6 +488,9 @@ ul.tags-list {
             @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 1fr;
                 min-height: 137px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-columns: repeat(2, 356.5px);
             }
             .single-item {
                 border-radius: 6px;
@@ -913,6 +919,11 @@ ul.tags-list {
             grid-template-columns: 445px 540px;
             grid-template-rows: 313px;
             grid-gap: 125px;
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 80px;
+
+            }
             @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
@@ -1107,7 +1118,6 @@ ul.tags-list {
                     padding: 0;
                     width: 100%;
                 }
-            
                 .abs-content {
                     width: 202px;
                     left: 50%;
@@ -1161,6 +1171,7 @@ ul.tags-list {
                         left: 50%;
                         transform: translate(-50%, -50%);
                     }
+                    
                     ul {
                         display: grid;
                         grid-template-columns: repeat(4, 109px);
@@ -1171,6 +1182,11 @@ ul.tags-list {
                             grid-template-columns: repeat(4, 65px);
                             grid-template-rows: 65px;
                             grid-gap: 13px; 
+                        }
+                        @media (min-width: 768px) and (max-width: 1023px) {
+                            grid-template-columns: repeat(4, 95px);
+                            grid-template-rows: 95px;
+                            grid-gap: 25px;
                         }
                         li {
                             display: grid;
@@ -1189,6 +1205,10 @@ ul.tags-list {
                                 @media (min-width: 320px) and (max-width: 767px) {
                                     width: 71px;
                                     height: 71px;
+                                }
+                                @media (min-width: 768px) and (max-width: 1023px) {
+                                    width: 101px;
+                                    height: 101px;
                                 }
                             }
                             span.value {
@@ -1222,6 +1242,10 @@ ul.tags-list {
         background: #0E153D;
         @media (min-width: 320px) and (max-width: 767px) {
             height: initial;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            height: 360px;
+            margin-bottom: 0;
         }
         .promotion-section-content {
             @media (min-width: 320px) and (max-width: 767px) {
@@ -1270,6 +1294,18 @@ ul.tags-list {
                 padding: 40px 0;
                 justify-items: center;
                 grid-gap: 45px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-gap: 40px;
+                padding: 80px 0;
+
+            }
+            img{
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    width: 105px;
+                    height: 45px;
+    
+                }
             }
         }
     }
