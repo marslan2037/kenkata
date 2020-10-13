@@ -1,19 +1,23 @@
 $(document).ready(function() {
-    // setInterval(function () {
-    //     moveRight();
-    // }, 3000);
-
-
     var slideCount = $('.slider .slider-content .single-item').length;
-    console.log(slideCount)
 	var slideWidth = $('.slider .slider-content .single-item').width();
     var slideHeight = $('.slider .slider-content .single-item').height();
     
     var sliderUlWidth = slideCount * slideWidth;
     
-    $('.slider').css({ width: (slideWidth * 3) + 66, height: slideHeight });
-	
-	$('.slider .slider-content').css({ width: (slideWidth * 1) + 66 });
+    if(window.matchMedia("(max-width: 767px)").matches) {
+        $('.slider').css({ width: (slideWidth * 1) + 0, height: slideHeight });
+        $('.slider .slider-content').css({ width: (slideWidth * 1) + 0 });
+    } else if(window.matchMedia("(max-width: 1023px)").matches) {
+        $('.slider').css({ width: (slideWidth * 2) + 20, height: slideHeight });
+        $('.slider .slider-content').css({ width: (slideWidth * 2) + 20 });
+    } else if(window.matchMedia("(max-width: 1280px)").matches) {
+        $('.slider').css({ width: (slideWidth * 3) + 57, height: slideHeight });
+        $('.slider .slider-content').css({ width: (slideWidth * 3) + 57 });
+    } else {
+        $('.slider').css({ width: (slideWidth * 3) + 66, height: slideHeight });
+        $('.slider .slider-content').css({ width: (slideWidth * 3) + 66 });
+    }
 	
     $('.slider .slider-content .single-item:last-child').prependTo('.slider .slider-content');
 
@@ -63,12 +67,12 @@ $(document).ready(function() {
 
 
 
-$(document).ready(function(){
-    if(window.matchMedia("(max-width: 767px)").matches){
-        // The viewport is less than 768 pixels wide
-        alert("This is a mobile device.");
-    } else{
-        // The viewport is at least 768 pixels wide
-        alert("This is a tablet or desktop.");
-    }
-});
+// $(document).ready(function(){
+//     if(window.matchMedia("(max-width: 767px)").matches){
+//         // The viewport is less than 768 pixels wide
+//         alert("This is a mobile device.");
+//     } else{
+//         // The viewport is at least 768 pixels wide
+//         alert("This is a tablet or desktop.");
+//     }
+// });

@@ -63,6 +63,7 @@ ul.tags-list {
   position: relative; }
   .slider-container span.sl-button {
     position: absolute;
+    z-index: 1;
     top: 50%;
     transform: translate(0, -50%);
     width: 64px;
@@ -83,6 +84,9 @@ ul.tags-list {
       transform: translate(0, -50%);
       background-position: 24px;
       transform: translate(0, -50%) rotate(180deg); }
+    @media (min-width: 320px) and (max-width: 1280px) {
+      .slider-container span.sl-button.sl-pull-left {
+        left: 5px; } }
   .slider-container span.sl-button.sl-pull-right {
     right: -80px;
     background-position: 19px;
@@ -90,14 +94,15 @@ ul.tags-list {
     .slider-container span.sl-button.sl-pull-right:hover {
       transform: translate(0, -50%);
       background-position: 24px; }
+    @media (min-width: 320px) and (max-width: 1280px) {
+      .slider-container span.sl-button.sl-pull-right {
+        right: 5px; } }
   .slider-container span.sl-button.active {
     background-color: #20D3C2; }
   .slider-container .slider {
     overflow: hidden;
-    position: relative; }
-    @media (min-width: 320px) and (max-width: 767px) {
-      .slider-container .slider {
-        display: none; } }
+    position: relative;
+    margin: 0 auto; }
 
 .main-container {
   max-width: 1920px;
@@ -703,8 +708,15 @@ ul.tags-list {
       position: relative; }
       @media (min-width: 320px) and (max-width: 767px) {
         .main-container .product-section .product-section-content {
-          grid-template-columns: 1fr;
-          grid-template-rows: auto; } }
+          grid-template-columns: 305px 305px 305px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .main-container .product-section .product-section-content {
+          grid-template-columns: 310px 310px 310px;
+          grid-gap: 20px; } }
+      @media (min-width: 1024px) and (max-width: 1280px) {
+        .main-container .product-section .product-section-content {
+          grid-template-columns: 315px 315px 315px;
+          grid-gap: 28px; } }
       .main-container .product-section .product-section-content .single-item {
         overflow: hidden;
         background: #eeeeeb;
