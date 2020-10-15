@@ -70,8 +70,14 @@ ul.tags-list {
     }
 }
 
+.testimonials-slider-container {
+    padding: 120px 0 120px;
+}
 
-.slider-container {
+.new-arrival-slider-container, 
+.featured-product-slider-container,
+.testimonials-slider-container, 
+.blog-slider-container {
     position: relative;
     span.sl-button {
         position: absolute;
@@ -768,9 +774,15 @@ ul.tags-list {
             grid-template-columns: 350px 350px;
             grid-template-rows: 400px;
             grid-gap: 220px;
+            position: relative;
+            justify-content: start;
             @media (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 1fr;
                 grid-gap: 45px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                grid-template-columns: 180px 180px;
+                grid-gap: 205px;
             }
             .single-blog {
                 background-color: #CCCCCC;
@@ -793,6 +805,14 @@ ul.tags-list {
                         right: initial;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                    }
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        width: 235px;
+                        height: initial;
+                        right: -150px;
+                    }
+                    @media (min-width: 1024px) and (max-width: 1140px) {
+                        right: -75px;
                     }
                     .date-badge {
                         width: 60px;
@@ -1519,21 +1539,28 @@ ul.tags-list {
         height: 717px;
         background-color: #0E153D;
         margin: 0 0 105px;
+        position: relative;
         @media (min-width: 320px) and (max-width: 767px) {
             height: inherit;
             margin: 0 0 45px;
         }
+        .slider {
+            // height: 100% !important;
+        }
+        span.qoutes-icon {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);
+        }
         .testimonials-section-content {
             position: relative;
-            padding: 120px 0 120px;
+            // padding: 120px 0 120px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 451px;
             @media (min-width: 320px) and (max-width: 767px) {
                 padding-bottom: 45px;
-            }
-            span.qoutes-icon {
-                position: absolute;
-                left: 50%;
-                top: 0;
-                transform: translate(-50%, 0);
             }
             .single-testimonial {
                 text-align: center;
