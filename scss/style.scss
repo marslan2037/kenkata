@@ -11,6 +11,24 @@ ul {
     }
 }
 
+button, span.sl-button, .category-dropdown, span.search-icon, .cart-section li {
+    transition: all 0.5s;
+    // &:after {
+    //     content: '\00bb';
+    //     position: absolute;
+    //     opacity: 0;
+    //     top: 0;
+    //     right: -20px;
+    //     transition: 0.5s;
+    // }
+    // &:hover {
+    //     &:after {
+    //         opacity: 1;
+    //         right: 0;
+    //     }
+    // }
+}
+
 button.round-button {
     width: 154px;
     height: 54px;
@@ -501,6 +519,8 @@ ul.tags-list {
                         &:hover {
                             ul.inner-menu {
                                 display: block;
+                                // opacity: 1;
+                                // height: auto;
                             }
                         }
                         @media (min-width: 320px) and (max-width: 767px) {
@@ -530,6 +550,9 @@ ul.tags-list {
                         }
                         ul.inner-menu {
                             display: none;
+                            // transition: all 0.5s;
+                            // opacity: 0;
+                            // height: 0;
                             position: absolute;
                             width: 200px;
                             background: #20D3C2;

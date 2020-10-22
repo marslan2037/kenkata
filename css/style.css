@@ -8,6 +8,9 @@
 ul li {
   list-style: none; }
 
+button, span.sl-button, .category-dropdown, span.search-icon, .cart-section li {
+  transition: all 0.5s; }
+
 button.round-button {
   width: 154px;
   height: 54px;
