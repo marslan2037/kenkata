@@ -904,7 +904,9 @@ ul.tags-list {
                 }
                 &:hover {
                     .dark-layer {
-                        display: block;
+                        opacity: 1;
+                        height: 100%;
+                        transition: height 0ms 0ms, opacity 600ms 0ms;
                     }
                 }
                 img {
@@ -969,7 +971,9 @@ ul.tags-list {
                     background-color: #0e153d;
                     opacity: 0.9;
                     z-index: 10;
-                    display: none;
+                    opacity: 0;
+                    transition: height 0ms 400ms, opacity 400ms 0ms;
+                    height: 0;
                     ul {
                         width: 46px;
                         height: 203px;

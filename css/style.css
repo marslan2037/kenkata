@@ -776,7 +776,9 @@ ul.tags-list {
           .main-container .product-section .product-section-content .single-item {
             min-height: 400px; } }
         .main-container .product-section .product-section-content .single-item:hover .dark-layer {
-          display: block; }
+          opacity: 1;
+          height: 100%;
+          transition: height 0ms 0ms, opacity 600ms 0ms; }
         .main-container .product-section .product-section-content .single-item img {
           position: absolute;
           top: 0; }
@@ -832,7 +834,9 @@ ul.tags-list {
           background-color: #0e153d;
           opacity: 0.9;
           z-index: 10;
-          display: none; }
+          opacity: 0;
+          transition: height 0ms 400ms, opacity 400ms 0ms;
+          height: 0; }
           .main-container .product-section .product-section-content .single-item .dark-layer ul {
             width: 46px;
             height: 203px;
